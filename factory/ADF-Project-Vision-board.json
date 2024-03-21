@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Project-Vision-board",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0c61bfc2-0259-47b0-9bb9-1f81ee9814f9",
+		"tenantId": "6cdbe2cf-ceb1-4a73-a6c5-5c64bf8ea906"
+	}
+}
