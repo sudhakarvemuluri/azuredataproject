@@ -1,0 +1,32 @@
+{
+	"name": "SCEDUE_TRIGGER_CSV_PARQUET",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_SQL_PARQUET",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-03-21T17:18:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"minutes": [
+						59
+					],
+					"hours": [
+						5
+					]
+				}
+			}
+		}
+	}
+}
