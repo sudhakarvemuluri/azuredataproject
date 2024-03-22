@@ -47,7 +47,7 @@
 			"type": "string",
 			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"EVENT_ADLS_PARQUET_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/adlsvisionboardproject"
 		},
@@ -108,8 +108,8 @@
 					"LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					},
-					"trigger1_properties_typeProperties_scope": {
-						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					"EVENT_ADLS_PARQUET_properties_typeProperties_scope": {
+						"value": "[parameters('EVENT_ADLS_PARQUET_properties_typeProperties_scope')]"
 					}
 				}
 			},

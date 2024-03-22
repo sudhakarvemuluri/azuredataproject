@@ -47,7 +47,7 @@
 			"type": "string",
 			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"EVENT_ADLS_PARQUET_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/adlsvisionboardproject"
 		}
@@ -643,7 +643,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/EVENT_ADLS_PARQUET')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -662,7 +662,7 @@
 				"typeProperties": {
 					"blobPathBeginsWith": "/manualfileinput/blobs/",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
+					"scope": "[parameters('EVENT_ADLS_PARQUET_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
