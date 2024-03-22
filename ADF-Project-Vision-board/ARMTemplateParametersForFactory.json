@@ -11,8 +11,32 @@
 		"LS_SQL_PARQUET_OUTPUT_accountKey": {
 			"value": ""
 		},
+		"LS_REST_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_MANUAL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_MANUAL_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_REST_PARQUET_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/MaQrgz/data"
+		},
+		"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsvisionboardproject.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/adlsvisionboardproject"
 		}
 	}
 }

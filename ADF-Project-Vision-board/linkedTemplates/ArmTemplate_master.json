@@ -15,9 +15,41 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQUET_OUTPUT'"
 		},
+		"LS_REST_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_REST_PARQUET_OUTPUT'"
+		},
+		"LS_MANUAL_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_MANUAL_PARQUET'"
+		},
+		"LS_MANUAL_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_MANUAL_PARQUET_OUTPUT'"
+		},
 		"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_REST_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/MaQrgz/data"
+		},
+		"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsvisionboardproject.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/adlsvisionboardproject"
 		},
 		"containerUri": {
 			"type": "string",
@@ -49,11 +81,35 @@
 					"LS_SQL_PARQUET_OUTPUT_accountKey": {
 						"value": "[parameters('LS_SQL_PARQUET_OUTPUT_accountKey')]"
 					},
+					"LS_REST_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_REST_PARQUET_OUTPUT_accountKey')]"
+					},
+					"LS_MANUAL_PARQUET_accountKey": {
+						"value": "[parameters('LS_MANUAL_PARQUET_accountKey')]"
+					},
+					"LS_MANUAL_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_MANUAL_PARQUET_OUTPUT_accountKey')]"
+					},
 					"LS_SQL_PARQUET_connectionString": {
 						"value": "[parameters('LS_SQL_PARQUET_connectionString')]"
 					},
 					"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_REST_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_REST_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_REST_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_MANUAL_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_MANUAL_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
