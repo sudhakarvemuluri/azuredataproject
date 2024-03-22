@@ -7,17 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADF-Project-Vision-board"
 		},
-		"LS_SQL_PARQUET_connectionString": {
+		"LS_BLOB_PARQUET_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'LS_SQL_PARQUET'"
+			"metadata": "Secure string for 'connectionString' of 'LS_BLOB_PARQUET'"
 		},
-		"LS_SQL_PARQUET_OUTPUT_accountKey": {
+		"LS_BLOB_PARQUET_OUTPUT_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQUET_OUTPUT'"
-		},
-		"LS_REST_PARQUET_OUTPUT_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_REST_PARQUET_OUTPUT'"
+			"metadata": "Secure string for 'accountKey' of 'LS_BLOB_PARQUET_OUTPUT'"
 		},
 		"LS_MANUAL_PARQUET_accountKey": {
 			"type": "secureString",
@@ -27,15 +23,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_MANUAL_PARQUET_OUTPUT'"
 		},
-		"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		"LS_REST_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_REST_PARQUET_OUTPUT'"
 		},
-		"LS_REST_PARQUET_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://retoolapi.dev/MaQrgz/data"
+		"LS_SQL_PARQUET_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_SQL_PARQUET'"
 		},
-		"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+		"LS_SQL_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQUET_OUTPUT'"
+		},
+		"LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
 		},
@@ -47,9 +47,25 @@
 			"type": "string",
 			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
 		},
+		"LS_REST_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/MaQrgz/data"
+		},
+		"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
 		"EVENT_ADLS_PARQUET_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/adlsvisionboardproject"
+		},
+		"EVENT_BLOB_PARQUET_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/blobstoragevisionboard"
 		},
 		"containerUri": {
 			"type": "string",
@@ -78,11 +94,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"LS_SQL_PARQUET_OUTPUT_accountKey": {
-						"value": "[parameters('LS_SQL_PARQUET_OUTPUT_accountKey')]"
+					"LS_BLOB_PARQUET_connectionString": {
+						"value": "[parameters('LS_BLOB_PARQUET_connectionString')]"
 					},
-					"LS_REST_PARQUET_OUTPUT_accountKey": {
-						"value": "[parameters('LS_REST_PARQUET_OUTPUT_accountKey')]"
+					"LS_BLOB_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_BLOB_PARQUET_OUTPUT_accountKey')]"
 					},
 					"LS_MANUAL_PARQUET_accountKey": {
 						"value": "[parameters('LS_MANUAL_PARQUET_accountKey')]"
@@ -90,17 +106,17 @@
 					"LS_MANUAL_PARQUET_OUTPUT_accountKey": {
 						"value": "[parameters('LS_MANUAL_PARQUET_OUTPUT_accountKey')]"
 					},
+					"LS_REST_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_REST_PARQUET_OUTPUT_accountKey')]"
+					},
+					"LS_SQL_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_SQL_PARQUET_OUTPUT_accountKey')]"
+					},
 					"LS_SQL_PARQUET_connectionString": {
 						"value": "[parameters('LS_SQL_PARQUET_connectionString')]"
 					},
-					"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
-						"value": "[parameters('LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url')]"
-					},
-					"LS_REST_PARQUET_properties_typeProperties_url": {
-						"value": "[parameters('LS_REST_PARQUET_properties_typeProperties_url')]"
-					},
-					"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
-						"value": "[parameters('LS_REST_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					"LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					},
 					"LS_MANUAL_PARQUET_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANUAL_PARQUET_properties_typeProperties_url')]"
@@ -108,12 +124,44 @@
 					"LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANUAL_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					},
-					"EVENT_ADLS_PARQUET_properties_typeProperties_scope": {
-						"value": "[parameters('EVENT_ADLS_PARQUET_properties_typeProperties_scope')]"
+					"LS_REST_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_REST_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_REST_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_REST_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "ADF-Project-Vision-board_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"EVENT_ADLS_PARQUET_properties_typeProperties_scope": {
+						"value": "[parameters('EVENT_ADLS_PARQUET_properties_typeProperties_scope')]"
+					},
+					"EVENT_BLOB_PARQUET_properties_typeProperties_scope": {
+						"value": "[parameters('EVENT_BLOB_PARQUET_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ADF-Project-Vision-board_ArmTemplate_0')]"
+			]
 		}
 	]
 }
