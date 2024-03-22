@@ -1,0 +1,24 @@
+{
+	"name": "EVENT_BLOB_PARQUET",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_BLOB_PARQUET",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/blobinputfile/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/e6f154c3-e173-42ed-a9e5-87ebe61b1c35/resourceGroups/rg_visionboard-PROJECT/providers/Microsoft.Storage/storageAccounts/blobstoragevisionboard",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
