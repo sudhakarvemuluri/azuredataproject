@@ -1,0 +1,20 @@
+{
+	"name": "DS_CSV_PARQUET_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_CSV_PARQUET_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "order items",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
