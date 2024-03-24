@@ -11,6 +11,12 @@
 		"LS_BLOB_PARQUET_OUTPUT_accountKey": {
 			"value": ""
 		},
+		"LS_CSV_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_MANUAL_PARQUET_accountKey": {
 			"value": ""
 		},
@@ -27,6 +33,12 @@
 			"value": ""
 		},
 		"LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsvisionboardproject.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsforsitransformvision.dfs.core.windows.net/"
 		},
 		"LS_MANUAL_PARQUET_properties_typeProperties_url": {

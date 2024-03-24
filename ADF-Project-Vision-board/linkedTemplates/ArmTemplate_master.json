@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_BLOB_PARQUET_OUTPUT'"
 		},
+		"LS_CSV_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_CSV_PARQUET'"
+		},
+		"LS_CSV_PARQUET_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_CSV_PARQUET_OUTPUT'"
+		},
 		"LS_MANUAL_PARQUET_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_MANUAL_PARQUET'"
@@ -36,6 +44,14 @@
 			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQUET_OUTPUT'"
 		},
 		"LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsvisionboardproject.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsforsitransformvision.dfs.core.windows.net/"
 		},
@@ -100,6 +116,12 @@
 					"LS_BLOB_PARQUET_OUTPUT_accountKey": {
 						"value": "[parameters('LS_BLOB_PARQUET_OUTPUT_accountKey')]"
 					},
+					"LS_CSV_PARQUET_accountKey": {
+						"value": "[parameters('LS_CSV_PARQUET_accountKey')]"
+					},
+					"LS_CSV_PARQUET_OUTPUT_accountKey": {
+						"value": "[parameters('LS_CSV_PARQUET_OUTPUT_accountKey')]"
+					},
 					"LS_MANUAL_PARQUET_accountKey": {
 						"value": "[parameters('LS_MANUAL_PARQUET_accountKey')]"
 					},
@@ -117,6 +139,12 @@
 					},
 					"LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_BLOB_PARQUET_OUTPUT_properties_typeProperties_url')]"
+					},
+					"LS_CSV_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_CSV_PARQUET_properties_typeProperties_url')]"
+					},
+					"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url')]"
 					},
 					"LS_MANUAL_PARQUET_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANUAL_PARQUET_properties_typeProperties_url')]"
